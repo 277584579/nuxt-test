@@ -1,0 +1,67 @@
+{
+  "name": "burgeon-pc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:serve": "node server --open",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start:nuxt": "nuxt start",
+    "start": "NODE_ENV=production node server.js",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
+    "lint": "yarn lint:js && yarn lint:style"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "sh ./build/pre-commit-lint.sh"
+    }
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.11.1",
+    "@nuxtjs/axios": "^5.13.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.8.3",
+    "express": "^4.17.1",
+    "fullpage-nuxt-module": "^1.0.0",
+    "intersection-observer": "^0.12.0",
+    "nuxt": "^2.14.12",
+    "nuxt-fullpage.js": "0.0.3",
+    "nuxt-polyfill": "^1.0.3",
+    "postcss-px2rem": "^0.3.0",
+    "sass": "^1.32.8",
+    "smoothscroll-polyfill": "^0.4.4",
+    "std-env": "^2.2.1",
+    "url-polyfill": "^1.1.12",
+    "vue-fullpage.js": "^0.1.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/proxy": "^2.0.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}

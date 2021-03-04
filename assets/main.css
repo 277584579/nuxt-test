@@ -1,0 +1,134 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+li {
+  vertical-align: top;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+#__nuxt {
+  width: 100%;
+  height: 100%;
+}
+
+#__layout {
+  width: 100%;
+  height: 100%;
+}
+
+/* 不支持 flex 的 ie 浏览器会响应这个，支持的会忽略这个 */
+.flex-layout {
+  display: flex;
+  float: left;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+input{  
+	background:none;  
+	outline:none;  
+	border:none;
+}
+input::-webkit-input-placeholder { 
+  /* WebKit browsers */ 
+  color: #B2B2B2; 
+  } 
+  input:-moz-placeholder { 
+  /* Mozilla Firefox 4 to 18 */ 
+  color: #B2B2B2; 
+  } 
+  input::-moz-placeholder { 
+  /* Mozilla Firefox 19+ */ 
+  color: #B2B2B2; 
+  } 
+  input:-ms-input-placeholder { 
+  /* Internet Explorer 10+ */ 
+  color: #B2B2B2; 
+  }
+/* 去掉默认滚动条 */
+.iScrollIndicator {
+  width: 0 !important;
+}
+
+.fp-right {
+  display: none !important;
+}
+
+body {
+  background: #F5F7FE;
+}
+.fp-tableCell{
+  width: 100vw;
+}
+.input-error{
+  border: 1px solid #E02020 !important; 
+}
+
+.input-error::-webkit-input-placeholder { 
+  /* WebKit browsers */ 
+  color: #E02020; 
+  } 
+  .input-error:-moz-placeholder { 
+  /* Mozilla Firefox 4 to 18 */ 
+  color: #E02020; 
+  } 
+  .input-error::-moz-placeholder { 
+  /* Mozilla Firefox 19+ */ 
+  color: #E02020; 
+  } 
+  .input-error:-ms-input-placeholder { 
+  /* Internet Explorer 10+ */ 
+  color: #E02020; 
+  }
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: 1200px !important;
+  }
+}

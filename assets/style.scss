@@ -1,0 +1,26 @@
+body {
+  height: 100%;
+}
+// 弹性布局兼容性
+  @mixin flex($jc:center,$ai:center,$fd:row) {
+    // float: left;  //兼容ie旧版浏览器
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+
+    -webkit-box-pack: $jc;
+    -ms-flex-pack: $jc;
+    -webkit-justify-content: $jc;
+    justify-content: $jc;
+
+    -webkit-box-align: $ai;
+    -ms-flex-align: $ai;
+    -webkit-align-items: $ai;
+    align-items: $ai;
+
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: $fd;
+    -webkit-flex-direction: $fd;
+    flex-direction: $fd;
+  }
